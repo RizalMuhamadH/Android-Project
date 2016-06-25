@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.user.advanceapp.TransactionFragment">
+
+    <com.emmasuzuki.easyform.EasyForm xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.user.trainingretrofit.MainActivity"
+        app:submitButton="@+id/btn_expanses"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:background="#e0dddd"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <com.emmasuzuki.easyform.EasyFormEditText
+            app:errorMessage="empty"
+            app:errorType="empty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Expenses"
+            android:id="@+id/desc_expanses"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true" />
+
+        <com.emmasuzuki.easyform.EasyFormEditText
+            app:errorMessage="empty"
+            app:errorType="empty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/amount_exp"
+            app:regexPattern="[0-9]+"
+            android:hint="Amount" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_expanses"
+            android:text="Expenses"/>
+    </LinearLayout>
+    </com.emmasuzuki.easyform.EasyForm>
+
+    <com.emmasuzuki.easyform.EasyForm xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.user.trainingretrofit.MainActivity"
+        app:submitButton="@+id/btn_income"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view"
+        android:id="@+id/view2"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:background="#e0dddd"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <com.emmasuzuki.easyform.EasyFormEditText
+            app:errorMessage="empty"
+            app:errorType="empty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Income"
+            android:id="@+id/desc_income"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true" />
+
+        <com.emmasuzuki.easyform.EasyFormEditText
+            app:errorMessage="empty"
+            app:errorType="empty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/amount_in"
+            app:regexPattern="[0-9]+"
+            android:hint="Amount" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_income"
+            android:text="Income"/>
+    </LinearLayout>
+    </com.emmasuzuki.easyform.EasyForm>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_features_icons_ipc_site_07"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_conversion_transaction_banking_send_money_dollar_mobile_256"
+            android:title="Transaction" />
+        <item
+            android:id="@+id/nav_Synchronize"
+            android:icon="@drawable/ic_256_256_bced598237615236c013fc6cfe14f6b7_refresh"
+            android:title="Synchronize" />
+    </group>
+
+</menu>
